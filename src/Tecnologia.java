@@ -14,3 +14,4 @@ public Tecnologia(String tipo, String nombre, double precio, String codigo, int 
    public Tecnologia() {
     }
 }
+
