@@ -18,11 +18,37 @@ listaProductos.add(alimento);
 listaProductos.add(tecnologia);
 listaProductos.add(electrodomestico);
 
-    Alimento alimento2 = (Alimento)listaProductos.get(0);
     for (Producto producto: listaProductos) {
         if (producto.tipo.equals("alimento")) {
+            Alimento alimento3= (Alimento)producto;
+            System.out.println("El alimento es: "+alimento.nombre+"se expira el: "+alimento.fechaVencimiento);
+        } else if (producto.tipo.equals("tecnologia")) {
+            Tecnologia tecnologia2 = (Tecnologia)producto;
+            System.out.println("El electrodomestico es: "+tecnologia.nombre+"se expira el: "+tecnologia.marca);
+
+        } else if (producto.tipo.equals("electro")) {
+            Electrodomestico electrodomestico2 = (Electrodomestico)producto;
+            System.out.println("El electrodomestico es: "+electrodomestico.nombre+"se expira el: "+electrodomestico.garantia);
 
         }
-    }
 }
+    System.out.println("----------------------------------------------------");
+    
+    for (Producto producto: listaProductos) {
+        if (producto instanceof Alimento) {
+            Alimento alimento3= (Alimento)producto;
+            System.out.println("El alimento es: "+alimento.nombre+"se expira el: "+alimento.fechaVencimiento);
+        } else if (producto instanceof Tecnologia) {
+            Tecnologia tecnologia2 = (Tecnologia)producto;
+            System.out.println("El electrodomestico es: "+tecnologia.nombre+"se expira el: "+tecnologia.marca);
+
+        } else if (producto instanceof Electrodomestico) {
+            Electrodomestico electrodomestico2 = (Electrodomestico)producto;
+            System.out.println("El electrodomestico es: "+electrodomestico.nombre+"se expira el: "+electrodomestico.garantia);
+
+        }
+
+
+    }
+    }
 }
