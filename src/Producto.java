@@ -8,13 +8,15 @@ public class Producto {
     int cantidad;
 
     String marca;
+    String tipo;
 
-    public Producto(String nombre, double precio, String codigo, int cantidad, String marca) {
+    public Producto(String tipo, String nombre, double precio, String codigo, int cantidad, String marca) {
         this.nombre = nombre;
         this.precio = precio;
         this.codigo = codigo;
         this.cantidad = cantidad;
         this.marca = marca;
+        this.tipo = tipo;
     }
 
     public Producto() {
@@ -31,5 +33,7 @@ public class Producto {
         System.out.println("Ingrese el cantidad del producto");
         this.cantidad=sc.nextInt();
     }
+
+
 
 }
