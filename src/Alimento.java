@@ -9,13 +9,14 @@ public class Alimento extends Producto{
 
     private List<String> ingredientes = new ArrayList<>();
 
-    public Alimento(String nombre, double precio, String codigo, int cantidad,
+    public Alimento(String tipo, String nombre, double precio, String codigo, int cantidad,
                     String marca, String fechaElaboracion, String fechaExpiracion,
                     List<String> ingredientes) {
-        super(nombre, precio, codigo, cantidad, marca);
+        super(tipo, nombre, precio, codigo, cantidad, marca);
         this.fechaElaboracion = fechaElaboracion;
         this.fechaExpiracion = fechaExpiracion;
         this.ingredientes = ingredientes;
+        this.tipo = tipo;
     }
 
     public Alimento() {
